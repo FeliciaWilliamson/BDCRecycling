@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--customerReview.html-->
+<link rel="stylesheet" href="felicia_customerReview.css">
+<link rel="stylesheet" href="felicia_menus.css">
+
+<html lang="en">
+<head>
+<!-- added the meta viewpoint to make the website mobile friendly, and meta description to increase click rate -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BDC Recycling service, eco-friendly, recycling bins, bags, flags, family owned.">
+<title>Customer Feedback</title>
+
+</head>
+<body>
+
+	
+<nav onmouseout ="hide()">
+<div class ="Navbar">
+
+ 		 <a href="felicia_BDCRecycling.php" onmouseover="show('m1')">Home</a>
+		
+		  <div class="DropDown">
+ 			 <button class="DropN">BDC Recycling Info</button>
+			   <div class="Drop-Content" id="m2" onmouseover="show('m2')">
+		 			 <a href="felicia_aboutUs.html">About Us</a>
+					 
+ 				 </div>
+ 			</div>
+		<div class="DropDown">
+		 <button class="DropN">What We Recycle</button>
+		 <div class="Drop-Content" id="m3" onmouseover="show('m3')">
+		   <a href="felicia_materials.html">Materials</a>
+		 </div>
+		</div>
+	<div class="DropDown">
+		  <button class="DropN">Products</button>
+      <div class="Drop-Content" id ="m4" onmouseover="show('m4')">
+		    <a href="felicia_bin.php">Bin</a>
+		    <a href="felicia_recyclingBags.php">Bags</a>
+				<a href="felicia_recyclingFlags.php">Flags</a>
+		 </div>
+		</div> 
+		<div class="DropDown">
+		  <button class="DropN">Benefits</button>
+      <div class="Drop-Content" id ="m5" onmouseover="show('m5')">
+		    <a href="felicia_facts.html">Recycling Statistics</a>
+		    
+		 </div>
+		</div> 
+         <div class="DropDown">
+		 <button class="DropN">Customer</button>
+		 <div class="Drop-Content" id="m6" onmouseover="show('m6')">
+		   <a href="felicia_newCustomerForm.html">New Customer</a>
+			 <a href="felicia_returnCustomerForm.html">Returning Customer</a>
+			 <a href="felicia_customerReview.html">Customer Feedback</a>
+		 </div>
+		</div>
+</div>
+</nav>
+
+<p>We would love to get your feedback on our services. If you would take a few minutes and 
+tell us your experience and how well we did as well as any comments you want to add. Thank you.</p>
+<br>
+
+<form id="myForm1" action="felicia_output.php" method="post" name="form2">
+<fieldset>
+<label for="fName">First Name</label>
+<input type="text" id="fName" name="fName" size="50"><br><br>
+<label for="lName">Last Name</label>
+<input type="text" id="lName" name="lName" size="50"><br><br>
+<label for="email">Email</label>
+<input type="text" class="Email" id="email" name="email" size="50"><br><br>
+<style>.Email{margin-left:50px;</style>
+<p name="expPara">Have you experienced our pickup service before?</p>
+<label for="yes1">Yes</label>
+<input type="checkbox" id="yes1" name="items1[]" value="Yes">
+<label for="no1">No</label>
+<input type="checkbox" id="no1" name="items1[]" value="No"><br>
+
+<p>How satisfied was you with our pickup service?</p>
+<label for="very1">Very</label>
+<input type="radio" id="very1" name="sat" value="Very">
+<label for="somewhat1">Somewhat</label>
+<input type="radio" id="somewhat1" name="sat" value="Some What">
+<label for="slighD1">Slightly Displeased</label>
+<input type="radio" id="slightD1" name="sat" value="Slight Displeased">
+<label for="veryD1">Very Displeased</label>
+<input type="radio" id="veryD1" name="sat" value="Very Displeased"><br><br>
+<label for="comments1">Comments:</label>
+<textarea id="comments1" name="comments1" rows="5" cols="40"></textarea>
+<br><br>
+
+<p>Have you purchased bins from us before?</p>
+<label for="yes2">Yes</label>
+<input type="checkbox" id="yes2" name="items2[]" value="Yes">
+<label for="no1">No</label>
+<input type="checkbox" id="no2" name="items2[]" value="No"><br>
+
+<p>How satisfied was you with the quality of our bins?</p>
+<label for="very2">Very</label>
+<input type="radio" id="very2" name="radio2" value="Very">
+<label for="somewhat2">Somewhat</label>
+<input type="radio" id="somewhat2" name="radio2" value="Some What">
+<label for="slighD2">Slightly displeased</label>
+<input type="radio" id="slightD2" name="radio2" value="Slight Displeased">
+<label for="veryD2">Very Displeased</label>
+<input type="radio" id="veryD2" name="radio2" value="Very Displeased2"><br><br>
+<label for="comments2">Comments:</label>
+<textarea id="comments2" name="comments2" rows="5" cols="40"></textarea>
+<br><br>
+
+</fieldset>
+<input type="submit" value="Submit" id="submit" name="submit">
+<input type="reset" value="Reset Form">
+
+</form>
+
+<script src="felicia_menus.js" >
+</script>
+
+<script src="felicia_reset.js">
+
+</script>
+
+</body>
+</html>

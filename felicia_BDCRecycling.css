@@ -1,0 +1,26 @@
+body {
+font-family:Verdana, Geneva, sans-serif;
+font-size:large;
+color:#000;
+background-color: #6CB05D;
+}
+
+.Information {
+						float: right;
+						padding: 30px 30px;
+}
+.Logo {
+			float: left;
+			position: relative;
+			
+}
+.Border { 					
+border: 5px solid black;
+}
+ .Company{
+ 				position: absolute;
+				margin-top: 100px;
+				padding: 230px 30px 30px 20px;	
+ }
+ 
+ 
